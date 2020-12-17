@@ -1,0 +1,103 @@
+/* Меню */
+.top-menu {
+  position: fixed;
+  background: black;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.top-menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.hajimelogo {
+  font-size: 28px;
+  color: yellow;
+  padding: 0 30px;
+  font-family: "Comic sans ms";
+  src: url("my_font-family/2006.ttf");
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 50px;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-flex;}
+.menu-main a {
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: "Comic sans ms";
+  src: url("my_font-family/2006.ttf");
+  font-weight: bold;
+  color: white;
+  transition: .7s;
+}
+.menu-main a:hover {
+  background: yellow;
+  color: black;
+}
+/* Биография */
+.textbiograf {
+  padding-top: 78px;
+}
+.leftimg {
+  float:left; /* Выравнивание по левому краю */
+  margin: 30px 20px 1px 30px; /* Отступы вокруг картинки */
+ }
+ .center {
+  display: block;
+  margin: 0 auto 2%;
+  padding: 20px 10px 25px 20px;
+ }
+.layer1 {
+  text-align: justify; /* выравнивание по краю*/
+  background: #363635; /* Цвет фона */
+  color: rgb(255, 255, 255); /* Цвет текста */
+  padding: 35px 28px 18px 20px; /* Поля вокруг текста */
+  font-size: 20px; /* Размер шрифта */
+ }
+ .leftimg1 {
+  float:left; /* Выравнивание по левому краю */
+  margin: 30px 20px 0px 30px; /* Отступы вокруг картинки */
+ }
+ .rightimg {
+  float: right; /* Выравнивание по правому краю  */ 
+  margin: 30px 30px 10px 20px; /* Отступы вокруг картинки */
+ }
+ .layer2 {
+  text-align: justify;
+  background: #363635; /* Цвет фона */
+  color: rgb(255, 255, 255); /* Цвет текста */
+  padding: 60px 200px 210px 10px; /* Поля вокруг текста */
+  font-size: 20px; /* Размер шрифта */
+ }
+ .layer2 h3 {
+  text-align: center;
+  font-size: 35px; 
+ }
+ .layer3 {
+  text-align: justify;
+  background: #363635; /* Цвет фона */
+  color: rgb(255, 255, 255); /* Цвет текста */
+  padding: 60px 200px 280px 10px; /* Поля вокруг текста */ /*300*/
+  font-size: 20px; /* Размер шрифта */
+ }
+ .layer3 th {text-indent: 20px; /* Отступ первой строки */}
+ .layer3 h3 {
+  text-align: center;
+  font-size: 35px; 
+ }
+ H3:first-letter {
+  font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+  font-size: 200%; /* Размер шрифта первого символа */
+  color: rgb(255, 251, 0); /* Цвет текста */
+ }

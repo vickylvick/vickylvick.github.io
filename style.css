@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+footer {
+    position: fixed;
+    background: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: #ffff;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h2 {
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p {
+    max-width: 500px;
+    margin: 4px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-bottom {
+    background: black;
+    width: 100vw;
+    padding: 5px 0;
+    text-align: center;
+}
+.footer-bottom {
+    font-size: 13px;
+    word-spacing: 2px;
+    text-decoration: none;
+}
+.footer-bottom span a:link {
+    color: rgb(159, 96, 204);
+    text-decoration: none;       
+}
+.footer-bottom span a:hover{
+    color:yellow; /* Цвет ссылки */
+}
+/*.footer-bottom span a:visited {
+    color: grey;
+}*/
