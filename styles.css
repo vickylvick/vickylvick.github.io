@@ -1,0 +1,129 @@
+*,
+*::before
+*::after{
+    margin: 10px 10px 10px 10px ;
+    padding: 0;
+   /* box-sizing: border-box;*/
+}
+
+/*html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+}
+*/
+.container{
+    width: 100%;
+    max-width: 100rem;
+    margin: 0;
+    padding: 85px 25px 10px 20px;
+    background-color: black;
+}
+.image-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+        'img-1 img-2 img-2 img-4'
+        'img-1 img-6 img-8 img-8' 
+        'img-10 img-10 img-5 img-3'
+        'img-7 img-7 img-9 img-9';
+}
+.image-gallery a{
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.image-gallery a i{
+    color: rgb(255, 255, 255, .6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border:  2px solid rgb(255, 255, 255, .6);
+    border-radius: 4rem;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.image-gallery a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .8);
+    opacity: 0;
+    transition: opasity .10s;
+}
+/*.image-gallery a:hover i{
+
+}*/
+.image-gallery a:hover::before{
+    opacity: 1;
+}
+.img-1{
+    grid-area: img-1;
+    min-width: 30.5rem;
+    min-height: 51.5rem;
+    background-image: url("image/img-1.jpg");
+}
+.img-2{
+    grid-area: img-2;
+    background-image: url("image/img-2.jpg");
+}
+.img-3{
+    grid-area: img-3;
+    min-width: 21.5rem;
+    min-height: 30.5rem;
+    background-image: url("image/img-3.jpg");
+}
+.img-4{
+    grid-area: img-4;
+    background-image: url("image/img-4.jpg");
+}
+.img-5{
+    grid-area: img-5;
+    min-width: 20.5rem;
+    min-height: 30.5rem;
+    background-image: url("image/img-5.jpg");
+}
+.img-6{
+    grid-area: img-6;
+    min-width: 15.5rem;
+    min-height: 20.5rem;
+    background-image: url("image/img-6.jpg");
+}
+.img-7{
+    grid-area: img-7;
+    min-height: 25.5rem;
+    background-image: url("image/img-7.jpg");
+}
+.img-8{
+    grid-area: img-8;
+    background-image: url("image/img-8.jpg");
+}
+.img-9{
+    grid-area: img-9;
+    min-height: 25.5rem;
+    background-image: url("image/img-9.jpg");
+}
+.img-10{
+    grid-area: img-10;
+    min-height: 30.5rem;
+    background-image: url("image/img-10.jpg");
+}
