@@ -5,14 +5,11 @@
 <title>Miyagi and Andy Panda</title>
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="style.css" > 
-<meta name="viewport" content="width=device-width"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <style>
-  body{
-    background-color: yellow;
-    }
-  h1{
-    font-family: "Comic sans ms";
-  }
+  body{ background-color: yellow; }
+  h1{ font-family: "Comic sans ms"; }
 </style>
 </head>
 
@@ -25,13 +22,13 @@
     <li class="active"><a href="Биография.html">Биография</a></li>
     <li><a href="Галерея.html">Галерея</a></li>
     <li><a href="Альбомы.html">Альбомы</a></li>
-    <li><a href="Плейлист.html">Плейлист</a></li>
+    <!--<li><a href="Плейлист.html">Плейлист</a></li> -->
     <li><a href="Клипы.html">Клипы</a></li>   
   </ul>
  </nav>
 <!-- наполнение текстом и картинками-->
  <div class="textbiograf">
-  <p><img src="image/1.png" alt="Miyagi & Andy Panda" width="47%" height="21%" class="leftimg"></p>
+  <img src="image/1.png" alt="Miyagi & Andy Panda" width="47%" height="21%" class="leftimg">
  <div class="layer1"> 
     <table><tr><th>Miyagi & Andy Panda — российский хип-хоп-дуэт из города Владикавказ, Северная Осетия, образованный в 2015 году.
     Коллектив состоит из двух человек, известных под сценическими псевдонимами «Miyagi» — Азамат Кудзаев и «Andy Panda» — Сослан Бурнацев.</th></tr>
@@ -61,6 +58,33 @@
  </div>
  <hr color="yellow" size="6px">
  </div>
+
+ <a class="back_to_top" title="Наверх">↑</a>
+ <script>
+   (function() {
+  'use strict';
+  function trackScroll() {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+      goTopBtn.classList.add('back_to_top-show');
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('back_to_top-show');
+    }
+  }
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -80);
+      setTimeout(backToTop, 0);
+    }
+  }
+  var goTopBtn = document.querySelector('.back_to_top');
+  window.addEventListener('scroll', trackScroll);
+  goTopBtn.addEventListener('click', backToTop);
+})();
+ </script>
 
  <footer>
   <div class="footer-bottom">

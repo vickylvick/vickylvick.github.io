@@ -51,3 +51,82 @@ footer {
 /*.footer-bottom span a:visited {
     color: grey;
 }*/
+
+.return{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    top: 5%;
+    left: 5%;
+    padding: 20px 40px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 yellow ;
+    transition: .1s;
+}
+.return:hover{
+    box-shadow: -10px -10px 0 black ;
+}
+.numberError{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.error{
+    color: grey;
+    margin: 0;
+    font-size: 350px;
+    letter-spacing: 10px;
+}
+.error::before, .error::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+.error::before{
+    color: yellow;
+    animation: glitch 1s infinite;
+}
+.error::after{
+    color:black;
+    animation: glitch 2s infinite;
+}
+.notFound{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    padding: 0 30px;
+    border-left: 20px solid black;
+    border-right: 20px solid yellow;
+
+}
+@keyframes glitch{
+    0%{
+        top: -5px;
+        left: -3px;
+    }
+    25%{
+        top: 0px;
+        left: -3px;
+    }
+    50%{
+        top: 5px;
+        left: 3px;
+    }
+    75%{
+        top: 0px;
+        left: 5px;
+    }
+    100%{
+        top: -5px;
+        left: -3px;
+    }
+}
