@@ -1,6 +1,17 @@
 /* M E N U */
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-width: 10%;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  margin: 0 auto;
+}
 .top-menu {
-  position: absolute;
+  position: relative;
   background: black;
   padding: 10px;
   top: 0;
@@ -46,128 +57,7 @@
   color: black;
 }
 
-/* B I O G R A P H Y */
-
-.textbiograf {
-  padding-top: 78px;
-}
-.leftimg {
-  float:left; /* Выравнивание по левому краю */
-  margin: 30px 20px 1px 30px; /* Отступы вокруг картинки */
- }
- .center {
-  display: block;
-  margin: 0 auto 2%;
-  padding: 20px 10px 25px 20px;
- }
-.layer1 {
-  text-align: justify; /* выравнивание по краю*/
-  background: #363635; /* Цвет фона */
-  color: rgb(255, 255, 255); /* Цвет текста */
-  padding: 35px 28px 18px 20px; /* Поля вокруг текста */
-  font-size: 20px; /* Размер шрифта */
- }
- .leftimg1 {
-  float:left; /* Выравнивание по левому краю */
-  margin: 30px 20px 0px 30px; /* Отступы вокруг картинки */
- }
- .rightimg {
-  float: right; /* Выравнивание по правому краю  */ 
-  margin: 30px 30px 10px 20px; /* Отступы вокруг картинки */
- }
- .layer2 {
-  text-align: justify;
-  background: #363635; /* Цвет фона */
-  color: rgb(255, 255, 255); /* Цвет текста */
-  padding: 60px 200px 210px 10px; /* Поля вокруг текста */
-  font-size: 20px; /* Размер шрифта */
- }
- .layer2 h3 {
-  text-align: center;
-  font-size: 35px; 
- }
- .layer3 {
-  text-align: justify;
-  background: #363635; /* Цвет фона */
-  color: rgb(255, 255, 255); /* Цвет текста */
-  padding: 60px 200px 280px 10px; /* Поля вокруг текста */ /*300*/
-  font-size: 20px; /* Размер шрифта */
- }
- .layer3 th {text-indent: 20px; /* Отступ первой строки */}
- .layer3 h3 {
-  text-align: center;
-  font-size: 35px; 
- }
- H3:first-letter {
-  font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
-  font-size: 200%; /* Размер шрифта первого символа */
-  color: rgb(255, 251, 0); /* Цвет текста */
- }
-
- /* A L B U M */
-.Album {
-  padding-top: 78px;
-}
-.leftimga {
-  float:left; /* Выравнивание по левому краю */
-  margin: 30px 50px 10px 70px; /* Отступы вокруг картинки */
-  
- }
- .leftimga img{
-  border: 2px ;
- 
- }
-.layer1a {
-  text-align: justify; /* выравнивание по краю*/
-  background: #363635; /* Цвет фона */
-  color: white; /* Цвет текста */
-  padding: 35px 28px 1000px 20px; /* Поля вокруг текста  на весь альбом 1000 вниз*/
-  font-size: 20px; /* Размер шрифта */
-  line-height: 1.5
- }
- .layer1a span{
-  color: yellow;
-  font-size: 40px;
- }
- .layer1a p{
-  color:black;
- }
- .leftimga1 {
-  float: right;; /* Выравнивание по краю */
-  margin: 5px 170px 15px 30px; /* Отступы вокруг картинки */
-  width: 50%;
- }
- .musica p {
-  float: left;; /* Выравнивание по краю */
-  margin: 0px 90px 0px 550px; /* Отступы вокруг картинки */
-  font-size: 20px; /* Размер шрифта */
-  text-align: left;
-  color: yellow; /* Цвет текста */
- }
- .layer2a {
-  text-align: justify; /* выравнивание по краю*/
-  background: #363635; /* Цвет фона */
-  color: white; /* Цвет текста */
-  padding: 35px 28px 800px 20px; /* Поля вокруг текста  на весь альбом 1000 вниз*/
-  font-size: 20px; /* Размер шрифта */
-  line-height: 1.5
- }
- .layer2a span{
-  color: yellow;
-  font-size: 40px;
- }
- .layer2a p{
-  color:black;
- }
- .musica p {
-  float: left;; /* Выравнивание по краю */
-  margin: 0px 90px 0px 550px; /* Отступы вокруг картинки */
-  font-size: 20px; /* Размер шрифта */
-  text-align: left;
-  color: yellow; /* Цвет текста */
- }
-
- /* Кнопка наверх */
+ /* ↑  Кнопка Н А В Е Р Х  ↑ */
  .back_to_top {
   position: fixed;
   bottom: 80px;
@@ -190,4 +80,51 @@
 
 .back_to_top-show {
   display: block;
+}
+
+footer {
+  position: relative;
+  background: black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  color: #ffff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h2 {
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 4px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.footer-bottom {
+  background: black;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+}
+.footer-bottom {
+  font-size: 13px;
+  word-spacing: 2px;
+  text-decoration: none;
+}
+.footer-bottom span a:link {
+  color: rgb(159, 96, 204);
+  text-decoration: none;       
+}
+.footer-bottom span a:hover{
+  color:yellow; /* Цвет ссылки */
 }

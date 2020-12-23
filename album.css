@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    width: 100%;
+    min-height: 350px;
+    background-color: yellow;
+  }
+  .wrap p {
+    float: left;
+    width: 20%;
+    padding: 32px 10px 10px 10px; 
+  }
+  .wrap img {
+    max-width: 250%;
+    display: block;
+    margin: 0 auto;
+  }
+  .content-obj{
+      border: none;
+  }
+.content-obj:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
+
+  /* A L B U M */
+.Album {
+    padding-top: 10px;
+  }
+  .leftimga {
+    float:left; /* Выравнивание по левому краю */
+    margin: 30px 50px 10px 70px; /* Отступы вокруг картинки */
+    
+   }
+   .leftimga img{
+    border: 2px ;
+   }
+  .layer1a {
+    text-align: justify; /* выравнивание по краю*/
+    background: #363635; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 35px 28px 1000px 20px; /* Поля вокруг текста  на весь альбом 1000 вниз*/
+    font-size: 20px; /* Размер шрифта */
+    line-height: 1.5
+   }
+   .layer1a span{
+    color: yellow;
+    font-size: 40px;
+   }
+   .layer1a p{
+    color:black;
+   }
+   .leftimga1 {
+    float: right;; /* Выравнивание по краю */
+    margin: 5px 170px 15px 30px; /* Отступы вокруг картинки */
+    width: 50%;
+   }
+   .musica p {
+    float: left;; /* Выравнивание по краю */
+    margin: 0px 90px 0px 550px; /* Отступы вокруг картинки */
+    font-size: 20px; /* Размер шрифта */
+    text-align: left;
+    color: yellow; /* Цвет текста */
+   }
+   .layer2a {
+    text-align: justify; /* выравнивание по краю*/
+    background: #363635; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 35px 28px 800px 20px; /* Поля вокруг текста  на весь альбом 1000 вниз*/
+    font-size: 20px; /* Размер шрифта */
+    line-height: 1.5
+   }
+   .layer2a span{
+    color: yellow;
+    font-size: 40px;
+   }
+   .layer2a p{
+    color:black;
+   }
+   .musica p {
+    float: left;; /* Выравнивание по краю */
+    margin: 0px 90px 0px 550px; /* Отступы вокруг картинки */
+    font-size: 20px; /* Размер шрифта */
+    text-align: left;
+    color: yellow; /* Цвет текста */
+   }

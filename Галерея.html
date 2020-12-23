@@ -6,7 +6,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Miyagi and Andy Panda</title>
 <link rel="stylesheet" href="main.css"> 
-<link rel="stylesheet" href="style.css" > 
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -38,6 +37,21 @@
       <a href="image/img-10.jpg" class="img-10"></a>
     </div>
   </div>
+
+  <script>
+    function showTagInfo()
+   { with (window.event.srcElement)
+   {
+    window.status=
+    "подія: "+event.type+
+    "номер тега: "+sourceIndex+
+    "наіменування: "+tagName+
+    "колір: "+ currentStyle.color +
+    "розмір: "+ currentStyle.fontSize+
+    "жирність: "+currentStyle.fontWeight;
+   }
+   }
+  </script>
 
   <footer>
     <div class="footer-bottom">
